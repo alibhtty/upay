@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="icon" sizes="144x144" href="favicon/android-chrome-144x144.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+        <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/fancybox.min.css">
+        <link rel="stylesheet" href="assets/css/precios.css">
+        <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'> -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="assets/css/locomotive-scroll.min.css">
+        <title>uPay</title>
+    </head>
+
+    <body oncontextmenu="return false">
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Home</a>
+                
+                <!-- <div class="nav__blur">
+                    <img class="nav__blur" src="/assets/img/galery01.jpg" alt="">
+                </div> -->
+
+                <a class="nav__banner">
+                    <h3 class="nav__banner__text">Ver la carta</h3>
+                </a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#galery" class="nav__link">
+                                <i class='bx bx-photo-album'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bx-briefcase-alt-2'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square-detail'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme nav__logo' id="theme-button"></i>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+
+                    <div class="home__mesa">
+                        <div class="mesa_texto">
+                            <h3>Tu mesa</h3>
+                            <li style="padding: 1rem 0;">
+
+                                <div class="mesa-item">
+                                    <h4 style="float: left;">Chipirones a la andaluza</h4>
+                                    <h4 style="float:right;">8.00€</h4>
+                                </div> <br>
+                                <div class="mesa-item">
+                                    <h4 style="float: left;">Paella (pequeña)</h4>
+                                    <h4 style="float:right;">14.00€</h4>
+                                </div> <br>
+                                <div class="mesa-item">
+                                    <h4 style="float: left;">Coca-Cola</h4>
+                                    <h4 style="float:right;">2.00€</h4>
+                                </div> <br>
+                                <div class="mesa-item">
+                                    <h4 style="float: left;">Bot. vino tinto</h4>
+                                    <h4 style="float:right;">12.50€</h4>
+                                </div> <br>
+                                <div class="mesa-item">
+                                    <h4 style="float: left;">Agua</h4>
+                                    <h4 style="float:right;">2.00€</h4>
+                                </div> <br>
+                                <div class="mesa-item">
+                                    <h4 style="float: left;">Café americano</h4>
+                                    <h4 style="float:right;">1.30€</h4>
+                                </div> <br> <br>
+                                <div class="mesa-item">
+                                    <h4 style="float: left;">Total</h4>
+                                    <h4 style="float:right;">39,8€</h4>
+                                </div> <br>
+                                
+                                
+                            </li>
+                        </div>
+                    </div>
+
+                    <!-- <div class="home__mesa">
+                        div
+                    </div> -->
+
+                    <!-- <div class="home__data">
+                        <span class="home__greeting">Hola soy</span>
+                        <h1 class="home__name">Daniela Peralvo</h1>
+                        <h3 class="home__education">Fotógrafa Profesional</h3>
+
+                        <div class="home__buttons">
+                            <a href="#galery" class="button button--ghost">Ver Galería</a>
+                            <a download="" href="assets/pdf/Ansel-Cv.pdf" class="button button--ghost">Descargas</a>
+                            <a href="#about" class="button">Sobre mi</a>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="home__handle">
+                        <img src="assets/img/perfil.png" class="home__img" alt="DP Fotografía">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://instagram.com/soulmate.av/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                        <a href="https://alibhtty.github.io/soulmate/" target="_blank" class="home__social-link">
+                            <img width="19px" src="assets/icons/soulmate.svg" alt="soulmate barcelona">
+                            <i class='bx bxl-flickr'></i>
+                        </a>
+                        <a href="https://www.twitter.com/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                    </div>
+
+                    <a href="#about" class="home__scroll">
+                        <i class='bx bx-mouse home__scroll-icon' ></i>
+                        <span class="home__scroll-name">Deslizar</span>
+                    </a> -->
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <span class="section__subtitle">Un poco</span>
+                <h2 class="section__title">Sobre mi</h2>
+
+                <div class="about__container container grid" style="padding: 0 2rem;">
+                    <!-- <img src="assets/img/about.jpg" alt="" class="about__img"> -->
+
+                    <div class="about__data">
+                        <div class="about__info">
+                            <div class="about__box">
+                                <i class='bx bx-award about__icon'></i>
+                                <h3 class="about__title">Experiencia</h3>
+                                <span class="about__subtitle">4 Años</span>
+                            </div>
+    
+                            <div class="about__box">
+                                <i class='bx bx-briefcase-alt about__icon'></i>
+                                <h3 class="about__title">Completados</h3>
+                                <span class="about__subtitle">26+ Proyectos</span>
+                            </div>
+    
+                            <div class="about__box">
+                                <i class='bx bx-map about__icon'></i>
+                                <h3 class="about__title">Ubicación</h3>
+                                <span class="about__subtitle">Barcelona</span>
+                            </div>
+                        </div>
+
+                        <!-- <p class="about__description">
+                            Soy Daniela, fotógrafa especializada en retratos, me gusta capturar momentos felices y espacios abiertos que merecen ser recordados para siempre. <br>
+                            También me dedico a la creación de contenido digital para empresas, con el toque característico entre lo orgánico y profesional.
+                        </p>
+
+                        <a href="#contact" class="button">Contactar</a> -->
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== GALLERY ===============-->
+            <section class="gallery section" id="galery">
+              <span class="section__subtitle">Tarifa y</span>
+              <h2 class="section__title">Pagos</h2> <!-- Galería -->
+  
+              <!-- <main class="mains">
+                  <div class="containers recientes">
+                    <div class="card">
+                      <div class="card-image card-recientes">
+                        <a href="assets/img/sesion/sonia/DSC07727.jpg" data-fancybox="gallery" data-caption="Sesión by Sonia">
+                          <img src="assets/img/sesion/sonia/DSC07727-min.jpg" alt="Image Gallery">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-image card-recientes">
+                        <a href="assets/img/barcelona/bunkers/DSC07286.jpg" data-fancybox="gallery" data-caption="Los Bunker's del Carmel">
+                          <img src="assets/img/barcelona/bunkers/DSC07286-min.jpg" alt="Image Gallery">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-image card-recientes">
+                        <a href="assets/img/galery01.jpg" data-fancybox="gallery" data-caption="Sesión by Ariadna">
+                          <img src="assets/img/galery01.jpg" alt="Image Gallery">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-image card-recientes">
+                        <a href="assets/img/galery03.jpg" data-fancybox="gallery" data-caption="Sun & Sky by Fernanda">
+                          <img src="assets/img/galery03.jpg" alt="Image Gallery">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </main> -->
+            </section>
+
+            <!--=============== TARIFAS & SERVICIOS ===============-->
+            <section class="services section">
+                <span class="section__subtitle">Tarifas y</span>
+                <h2 class="section__title">Notificiones</h2> <!-- Servicios -->
+                <!-- <div id="feature"> <-- class="section" ->
+                    <div class="w-table">
+                      <div class="w-table-cell">
+                        <div class="w-container">
+      
+                        <div class="w-card color-violet">
+                          <div class="card-header">
+                          <div class="w-title">
+                            Sesión Fotográfica
+                          </div>
+                          <div class="w-price">€35.00</div>
+                          <div class="container-button">
+                            <a href="https://api.whatsapp.com/send?phone=34637366402&text=[Sesión Fotográfica] Hola, quiero más información :D" target="_blank" class="w-button">
+                              Contratar
+                            </a>
+                          </div>
+                          </div>
+                          <div class="card-content">
+                          <div class="w-item">
+                            <span>40<i class='bx bx-image-alt img-icon'></i> </span>Eventos Especiales 
+                          </div>
+                          <div class="w-item">
+                            <span>30<i class='bx bx-image-alt img-icon'></i> </span>Fotografía de Retrato
+                          </div>
+                          <div class="w-item">
+                            <span>20<i class='bx bx-image-alt img-icon'></i> </span>Fotografía de Producto
+                          </div>
+                          </div>
+                        </div>
+      
+                        <div class="w-card color-green">
+                          <div class="card-header">
+                          <div class="w-title">
+                            Composición de video
+                          </div>
+                          <div class="w-price">
+                            €50.00
+                          </div>
+                          <div class="container-button">
+                            <a href="https://api.whatsapp.com/send?phone=34637366402&text=[Composición de video] Hola, quiero más información :D" target="_blank" class="w-button">
+                                Contratar
+                            </a>
+                          </div>
+                          </div>
+                          <div class="card-content">
+                          <div class="w-item">
+                            <span>1<i class='bx bx-movie img-icon'></i> </span>Clip con fondo musical 
+                          </div>
+                          <div class="w-item">
+                            <span>1<i class='bx bx-equalizer img-icon'></i> </span>Sonorizar video 
+                          </div>
+                          <div class="w-item">
+                            <span>1<i class='bx bxs-film img-icon'></i> </span>Spot Publicitario 
+                          </div>
+                          </div>
+                        </div>
+      
+                        <div class="w-card color-blue">
+                          <div class="card-header">
+                          <div class="w-title">
+                            Contenido Digital
+                          </div>
+                          <div class="w-title" style="padding: 10px 20px 34px;">
+                            para empresas
+                          </div>
+                          <div class="container-button">
+                            <a href="https://api.whatsapp.com/send?phone=34637366402&text=[Contenido para empresas] Hola, quiero más información :D" target="_blank" class="w-button">
+                                PREGUNTAR
+                            </a>
+                          </div>
+                          </div>
+                          <div class="card-content">
+                          <div class="w-item">
+                            <span><i class='bx bx-mobile-alt img-icon'></i> </span>Contenido para RRSS 
+                          </div>
+                          <div class="w-item">
+                            <span><i class='bx bx-images img-icon'></i> </span>Campaña Fotográfica
+                          </div>
+                          <div class="w-item">
+                            <span><i class='bx bx-world img-icon'></i> </span>Página Web 
+                          </div>
+                          </div>
+                        </div>
+                        
+                        </div>
+                      </div>
+                      </div>
+                  </div> -->
+
+
+
+
+                <!-- <div class="services__container container grid">
+                    <div class="services__card">
+                        <h3 class="services__title">Sesión <br> Fotográfica</h3>
+
+                        <span class="services__button">
+                            Ver más <i class='bx bx-chevron-right'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close'></i>
+
+                                <h3 class="services__modal-title">Sesión Fotográfica </h3>
+                                <p class="services__modal-description">
+                                    Service with more than 3 years of experience.
+                                    Providing quality work to clients and companies.
+                                </p>
+
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Eventos especiales.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Fotografía de Retrato.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Fotografía de Producto.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Fotografías Corporativas.</p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__card">
+                        <h3 class="services__title">Composición <br>de Video</h3>
+
+                        <span class="services__button">
+                            Ver más <i class='bx bx-chevron-right'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close'></i>
+
+                                <h3 class="services__modal-title">Composición de Video</h3>
+                                <p class="services__modal-description">
+                                    Service with more than 3 years of experience.
+                                    Providing quality work to clients and companies.
+                                </p>
+
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Clip de video Presentación con fondo musical.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Ambiente sonoro para Videos.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Spot punlicitario.</p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="services__card">
+                        <h3 class="services__title">Contenido <br> para Empresas</h3>
+
+                        <span class="services__button">
+                            Ver más <i class='bx bx-chevron-right'></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close'></i>
+
+                                <h3 class="services__modal-title">Contenido Digital para Empresas</h3>
+                                <p class="services__modal-description">
+                                    Service with more than 3 years of experience.
+                                    Providing quality work to clients and companies.
+                                </p>
+
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Contenido mensual para Redes Sociales.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Campaña Fotográfica.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Creación de Logo & Branding.</p>
+                                    </li>
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon'></i>
+                                        <p class="services__modal-info">Creación Web.</p>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+
+            <!--=============== WORK ===============-->
+            <section class="work section" id="work">
+                <span class="section__subtitle">Sesiones y</span>
+                <h2 class="section__title">Trabajos Recientes</h2>
+
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter="all" >Todo</span>
+                    <span class="work__item" data-filter=".movil">Urbano</span>
+                    <span class="work__item" data-filter=".web">Retrato</span>
+                    <span class="work__item" data-filter=".design">Producto</span>
+                </div>
+
+                <div class="work__container container grid" style="padding: 0 2rem;">
+
+                    <div class="work__card mix movil">
+                        <img src="assets/img/barcelona/montseny/min.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Montseny</h3>
+
+                        <a href="sesion/montseny/" class="work__button">
+                            Ver sesión <i class="bx bx-chevron-right work__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix web">
+                        <img src="assets/img/sesion/sonia/DSC07727-min-v.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Season by Sonia</h3>
+
+                        <a href="sesion/sonia/" class="work__button">
+                            Ver sesión <i class="bx bx-chevron-right work__icon" ></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix movil">
+                        <img src="assets/img/barcelona/bunkers/DSC07286-min.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Bunker's de Carmel - Barcelona</h3>
+
+                        <a href="sesion/bunkers-del-carmel/" class="work__button">
+                            Ver sesión <i class="bx bx-chevron-right work__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix web">
+                        <img src="assets/img/sesion/ariadna/DSC04651-min.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Season by Ariadna</h3>
+
+                        <a href="sesion/ariadna/" class="work__button">
+                            Ver sesión <i class="bx bx-chevron-right work__icon" ></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix web">
+                        <img src="assets/img/galery03.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Sun & Sky by Fernanda</h3>
+
+                        <a href="sesion/fernanda/" class="work__button">
+                            Ver sesión <i class="bx bx-chevron-right work__icon" ></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix movil">
+                        <img src="assets/img/sesion/forum-bcn/bcn-forum.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Forum - Barcelona</h3>
+
+                        <a href="#" class="work__button">
+                            Ver sesión <i class="bx bx-chevron-right work__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix movil">
+                        <img src="assets/img/sesion/bautizo/bautizo.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Bautizo</h3>
+
+                        <a href="#" class="work__button">
+                            Ver sesión <i class="bx bx-chevron-right work__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="work__card mix design">
+                        <img src="assets/img/galery08.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">El Ramblero</h3>
+
+                        <a href="sesion/el-ramblero/" class="work__button">
+                            Ver sesión <i class="bx bx-chevron-right work__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== PRODUCTOS/TESTIMONIALS ===============-->
+            <section class="testimonial section">
+                <span class="section__subtitle">Mis Productos y</span>
+                <h2 class="section__title">Descargas</h2>
+
+                <div class="testimonial__container container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__ejemplo" style="display: flex;">
+                                <!-- <img src="assets/img/preset01.jpg" alt="" class="testimonial__img"> -->
+                                <img src="assets/img/preset01.jpg" alt="" class="testimonial__img">
+                            </div>
+                            <!-- <img src="assets/img/preset01.jpg" alt="" class="testimonial__img"> -->
+
+                            <div class="testimonial__text">
+                                <h3 class="testimonial__name">ORANGE TEAL <br> PRESET LIGHTROOM</h3>
+                                <p class="testimonial__description">Archivo .ZIP</p>
+                                <p class="testimonial__description">Archivo .DNG <br>Preajuste de tonos cálidos y saturados.</p>
+                                <p class="testimonial__description">Archivo .TXT <br>Guía de instalación en Adobe Lightroom</p>
+                                <span class="services__button">
+                                    Descargar <i class='bx bxs-cloud-download services__icon'></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__ejemplo" style="display: flex;">
+                                <!-- <img src="assets/img/preset01.jpg" alt="" class="testimonial__img"> -->
+                                <img src="assets/img/preset01.jpg" alt="" class="testimonial__img">
+                            </div>
+                            <!-- <img src="assets/img/preset01.jpg" alt="" class="testimonial__img"> -->
+
+                            <div class="testimonial__text">
+                                <h3 class="testimonial__name">DUNE TEAL <br> PRESET LIGHTROOM</h3>
+                                <p class="testimonial__description">Archivo .ZIP</p>
+                                <p class="testimonial__description">Archivo .DNG <br>Preajuste de atmosfera con bajo contraste.</p>
+                                <p class="testimonial__description">Archivo .TXT <br>Guía de instalación en Adobe Lightroom</p>
+                                <span class="services__button">
+                                    Descargar <i class='bx bxs-cloud-download services__icon'></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__ejemplo" style="display: flex;">
+                                <img src="assets/img/preset01.jpg" alt="" class="testimonial__img">
+                            </div>
+
+                            <div class="testimonial__text">
+                                <h3 class="testimonial__name">Dune Sep <br> Preset Lightroom</h3>
+                                <p class="testimonial__description">Archivo .zip <br>Filtro .DNG de tonalidad con poco contraste y atmosfera grumosa.</p>
+                                <p class="testimonial__description">Archivo .txt <br>Guía de instalación en Adobe Lightroom</p>
+                                <span class="services__button">
+                                    Descargar <i class='bx bxs-cloud-download services__icon'></i>
+                                </span>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/preset01.jpg" alt="" class="testimonial__img">
+
+                            <div class="testimonial__text">
+                                <h3 class="testimonial__name">Preset Lightroom 02</h3>
+                                <p class="testimonial__description">A really good job, all aspects of the project were followed step by step and with good results. </p>
+                                <span class="services__button">
+                                    Descargar <i class='bx bx-chevron-right'></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/preset01.jpg" alt="" class="testimonial__img">
+
+                            <div class="testimonial__text">
+                                <h3 class="testimonial__name">Preset Lightroom 03</h3>
+                                <p class="testimonial__description">A really good job, all aspects of the project were followed step by step and with good results.</p>
+                                <span class="services__button">
+                                    Descargar <i class='bx bx-chevron-right'></i>
+                                </span>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle">Redes Sociales y</span>
+                <h2 class="section__title">Contacto</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__Content">
+                        <h3 class="contact__title">Social</h3>
+
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class="bx bx-mail-send contact__card-icon"></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">dp@gmail.com</span>
+
+                                <a href="mailto:peralvodaniela@gmail.com" target="_blank" class="contact__button">
+                                    Escribir <i class="bx bx-chevron-right contact__button-icon"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class="bx bxl-whatsapp contact__card-icon"></i>
+                                <h3 class="contact__card-title">Whatsapp</h3>
+                                <span class="contact__card-data">637-366-402</span>
+
+                                <a href="https://api.whatsapp.com/send?phone=34602316998&text=Hola, quiero más información :D" target="_blank" class="contact__button">
+                                    Escribir <i class="bx bx-chevron-right contact__button-icon"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class="bx bxl-messenger contact__card-icon"></i>
+                                <h3 class="contact__card-title">Messenger</h3>
+                                <span class="contact__card-data">daniela.fb</span>
+
+                                <a href="https://m.me/daniela.peralvo.31" target="_blank" class="contact__button">
+                                    Escribir <i class="bx bx-chevron-right contact__button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">Comentame sobre tu proyecto</h3>
+
+                        <form action="https://formspree.io/f/mbjwoqkn" method="POST" id="form" class="contact__form">
+                            <div class="contact__form-div">
+                                <label for="name" class="contact__form-tag">Nombres</label>
+                                <input name="name" type="text" placeholder="Inserta tu nombre" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="email" class="contact__form-tag">Mail</label>
+                                <input name="email" type="email" placeholder="Inserta tu email" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="message" class="contact__form-tag">Proyecto en mente</label>
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Escribe tu proyecto" class="contact__form-input" ></textarea>
+                            </div>
+    
+                            <button class="button">Enviar mensaje</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <!-- <h1 class="footer__title">   </h1> -->
+
+                <!-- <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="footer__link">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="footer__link">Testimonios</a>
+                    </li>
+                </ul> -->
+
+                <ul class="footer__social">
+                    <a href="https://alibhtty.github.io/soulmate/" target="_blank" class="footer__social-link">
+                        <img width="19px" src="assets/icons/soulmate.svg" alt="soulmate barcelona">
+                         <!-- <i class="bx bxl-facebook"></i> -->
+                    </a>
+                    <a href="https://www.instagram.com/soulmate.av/" target="_blank" class="footer__social-link">
+                         <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=SYdiHnFSnbA" target="_blank" class="footer__social-link">
+                         <i class="bx bxl-youtube"></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169 <a target="_blank" href="https://ali-bhtty.web.app/">4B</a>. All rights reserved
+                </span>
+            </div>
+        </footer>
+
+
+        <!--=============== LOCOMOTIVE SCROLL ===============-->
+        <!-- <script src="assets/js/locomotive-scroll.min.js"></script>
+        <script>
+          const virtualScrollSelector = '.main';
+          const locoScroll = new LocomotiveScroll({
+              el: document.querySelector(virtualScrollSelector),
+              smooth: true,
+              tablet: {
+                  smooth: true,
+              },
+              smartphone: {
+                  smooth: true,
+              }
+          });
+        </script> -->
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!--=============== FORM ===============-->
+        <script>
+            const $form = document.querySelector('#form')
+
+            $form.addEventListener('submit', handleSubmit)
+
+            async function handleSubmit(event) {
+                event.preventDefault()
+                const form = new FormData(this)
+                const response = await fetch(this.action, {
+                    method: this.method,
+                    body: form,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                if (response.ok) {
+                    this.reset()
+                    swal({
+                        title: 'Gracias',
+                        text: 'Te escribiré pronto 😃!',
+                        icon: 'success',
+                        timer: 4000,
+                        /* button: "Aww yiss!", */
+                        showConfirmButton: 'true',
+	                    confirmButtonColor: '#7abff6',
+                        confirmButtonText: 'Adelante',
+	                    confirmButtonAriaLabel: 'Adelante',
+                        /* imageUrl: 'https://alibhtty.github.io/elchangarrito/assets/img/bg-init.png',
+                        imageWidth: 'auto',
+                        imageHeight: '100% + 5px',
+                        imageAlt: 'Logo', */
+                    });
+                }
+            }
+        </script>
+        
+        <!--=============== GALERY JS ===============-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src='assets/js/galery-jquery.js'></script>
+        <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script> -->
+        <script id="rendered-js" >
+          // Fancybox Configuration
+          $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+            "slideShow",
+            "thumbs",
+            "zoom",
+            "fullScreen",
+            "share",
+            "close"],
+          
+            loop: true,
+            protect: true });
+          //# sourceURL=pen.js
+        </script>
+    </body>
+</html>
