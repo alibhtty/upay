@@ -1,2 +1,0 @@
-# upay
-payment
