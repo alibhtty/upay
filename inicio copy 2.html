@@ -53,12 +53,12 @@
   <!-- CORE CSS FRAMEWORK - END -->
 
   <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-  <link href="/modules/fancybox/jquery.fancybox.min.css" rel="stylesheet" type="text/css" media="screen"/>  <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
+  <link href="modules/fancybox/jquery.fancybox.min.css" rel="stylesheet" type="text/css" media="screen"/>  <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
   <!-- CORE CSS TEMPLATE - START -->
 
   
-    <link href="/assets/css/style.css" type="text/css" rel="stylesheet" media="screen" id="main-style" />
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen" id="main-style" />
   <!-- CORE CSS TEMPLATE - END -->
 
   
@@ -102,7 +102,7 @@
 <!--  SIDEBAR - END -->
 
 <!-- START navigation -->
-<!-- <nav class="fix_topscroll logo_on_fixed  topbar navigation">
+<nav class="fix_topscroll logo_on_fixed  topbar navigation">
   <div class="nav-wrapper container">
     <a id="logo-container" href="index.html" class=" brand-logo " ><svg xmlns="http://www.w3.org/2000/svg" width="400.000000pt" height="400.000000pt" viewBox="0 0 400.000000 400.000000" preserveAspectRatio="xMidYMid meet">
 <g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
@@ -122,9 +122,9 @@
     <a href="ui-pages-home.html#" data-target="slide-settings" class="waves-effect waves-circle navicon right sidenav-trigger show-on-large"><i class="app-icon-equalizer2"></i></a>
 
     <a href="ui-pages-home.html#" data-target="" class="waves-effect waves-circle navicon right nav-site-mode show-on-large"><i class="app-icon-brightness-contrast"></i></a>
-    <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> ->
+    <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
   </div>
-</nav> -->
+</nav>
 
 <ul id="slide-nav" class="sidenav sidemenu">
   <li class="user-wrap">
@@ -496,42 +496,20 @@
     <!-- INVOICE - CUENTA -->
     <div class="content-area">
 
-      <div class="pagehead-bg primary-bg" style=" background: #356396; background: -moz-linear-gradient(to right,  #356396 0%,#c8def5 100%); background: -webkit-linear-gradient(to right,  #356396 0%,#c8def5 100%); background: linear-gradient(to right,  #356396 0%,#c8def5 100%);">
+      <div class="pagehead-bg   primary-bg" >
         </div> 
     
-      <div class="container has-pagehead"> <!-- is-pagetitle -->
+      <div class="container has-pagehead is-pagetitle">
         <div class="section">
-          <h5 class="pagetitle">EasyPay</h5>
+          <h5 class="pagetitle">Invoice</h5>
               </div>
       </div>
   
       
     <div class="container over">
-
-      <div style="width: 45%; float:left; padding: 4rem 0;"> <!-- class="card-panel bg-primary invoice-to" -->
-        
-         <div class="white-text">Total:
-        </div>
-        <h5 style="font-size: 40px;" class="white-text top-0">44,20€</h5>
-        <div class="white-text">
-          322, Sector 12, Ring Road,
-          New York, USA
-        </div>
-      </div>
-
-      <div style="padding: 2rem 0rem 1rem 50%"  class="section">
-        
+      <div class="section">
     
     
-        <!-- <div class="row">
-          <div class="col s12 pad-0"><h5 class="bot-20 sec-tit  ">Platforms Used</h5>    <div class="chart-container z-depth-1">
-            <div class="" style="height:300px" id="platform_type_dates_pie"></div>
-        </div> -->
-        <canvas id="myChart" height="300" width="300"></canvas>
-
-</div>
-</div>
-
         <div class="card-panel bg-primary invoice-to">
           <h5 class="white-text top-0">Digital Solutions Ltd.</h5>
           <div class="white-text">
@@ -1131,7 +1109,7 @@
 
 
 <!-- FAQS -->
-<div class="container"> <!-- over -->
+<div class="container over">
   <div class="section ui-faq">
 
   <div class="row ">
@@ -1253,7 +1231,7 @@
 <div class="footer-menu circular">
   <ul>
       <li >
-      <a href="sub-account.html" >      <i class="mdi mdi-newspaper"></i>
+      <a href="sub-account.html" >      <i class="mdi mdi-newspaper"></i> <!-- all-inclusive -->
       <span></span>
       </a>    </li>
         <li >
@@ -1284,7 +1262,7 @@
 
 
 <!-- FOOTER -->
-<!-- <footer class="page-footer center social-colored ">
+<footer class="page-footer center social-colored ">
   <div class="container footer-content">
     <div class="row">
       <div class="">
@@ -1318,15 +1296,7 @@
       <div class="container">
         &copy; Copyright <a class="" href="https://themeforest.net/user/themepassion/portfolio">Themepassion</a>. All rights reserved.
       </div>
-    </div></footer> -->
-
-    <footer class="center" style="padding-bottom: 5rem;">
-      <div class="footer-copyright">
-        <div class="container">
-          &copy; Copyright <a class="" href="https://themeforest.net/user/themepassion/portfolio">EasyPay</a>. All rights reserved.
-        </div>
-      </div>
-    </footer>
+    </div></footer>
 
 
 <!-- IR ARRIBA -->
@@ -1341,39 +1311,33 @@
 </div><!--.content-area-->
 
 
-<script src="/assets/js/pwa.js"></script>
+<script src="assets/js/pwa.js"></script>
 
 <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
 
 <!-- CORE JS FRAMEWORK - START -->
-<script src="/modules/jquery/jquery-2.2.4.min.js"></script>
-<script src="/modules/materialize/materialize.js"></script>
-<script src="/modules/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-<script src="/assets/js/variables.js"></script>
+<script src="modules/jquery/jquery-2.2.4.min.js"></script>
+<script src="modules/materialize/materialize.js"></script>
+<script src="modules/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="assets/js/variables.js"></script>
 <!-- CORE JS FRAMEWORK - END -->
 
 
 <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-<script src="/modules/fancybox/jquery.fancybox.min.js" ></script><script src="assets/js/common.js"></script>
+<script src="modules/fancybox/jquery.fancybox.min.js" ></script><script src="assets/js/common.js"></script>
 <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
-<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
-<!-- <script src="modules/echarts/echarts.min.js" ></script> -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="/modules/echarts/mychart.js" ></script>
-<script src="/assets/js/common.js"></script>
-<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END -->
 
 <!-- CORE TEMPLATE JS - START -->
-<script src="/modules/app/init.js"></script>
-<script src="/modules/app/settings.js"></script>
+<script src="modules/app/init.js"></script>
+<script src="modules/app/settings.js"></script>
 
-<script src="/modules/app/scripts.js"></script>
+<script src="modules/app/scripts.js"></script>
 
 <!-- END CORE TEMPLATE JS - END -->
 
 
-<script src="/assets/js/preloader.js"></script>
+<script src="assets/js/preloader.js"></script>
 </body>
 
 </html>

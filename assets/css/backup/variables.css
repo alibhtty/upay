@@ -140,7 +140,7 @@ cccc  --primary-filter: 85,69,22; /*amber*/
   
   
   body[data-theme="cyan"]{
-  --primary-color: #ff6600; /*00BCD4 cyan*/
+  --primary-color: #00BCD4; /*cyan*/
   --primary-rgb: 0, 188, 212; /*cyan*/
   --primary-filter: 29,79,85; /*cyan*/
   --accent-color: #FF7043; /*orange*/

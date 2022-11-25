@@ -3,10 +3,10 @@
 ----------------------------------------*/
 body[data-site_mode="dark"]  {
     color: #eeeeee;
-    background-color: #000000; /* 37474f */
+    background-color: #37474f;
 }
 body[data-site_mode="dark"] .preloader-background{
-  background-color: #000000; /* 37474f */
+  background-color: #37474f;
 }
 [data-menu="dark"] .ui-mediabox .divider,
 [data-site_mode="dark"] .container .divider {
@@ -31,6 +31,6 @@ body[data-site_mode="dark"] .preloader-background{
 [data-site_mode="dark"] .container.over,
 [data-site_mode="dark"] .container.friends-carousel .friends-wrap ,
 [data-menu="dark"] .subpages.collection{
-	background: #000000; /* 37474F */
+	background: #37474F;
 }
 

@@ -121,7 +121,7 @@ body [data-footer_menu_style="light"] .footer-menu li a{
   Fixed Footer Menu - Dark Style
 ------------------------------------------*/
 [data-footer_menu_style="dark"] .footer-menu{
-  background-color: #455a64;
+  background-color: #000000; /* 455a64 */
 }
 [data-footer_menu_style="dark"] .footer-menu li a{
   color: #CFD8DC;
