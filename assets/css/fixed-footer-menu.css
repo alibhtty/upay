@@ -31,7 +31,7 @@ body.isfullscreen .footer-menu{
 }
 .footer-menu li{
   float: left;
-  width: 20%;
+  width: 20%; /* 20% */
   display: inline-block;
   height: 100%;
   text-align: center;
@@ -45,7 +45,7 @@ body.isfullscreen .footer-menu{
 }
 .footer-menu li i{
   display: block;
-  font-size: 26px;
+  font-size: 30px; /* 26 */
 }
 .footer-menu li span{
   display: block;

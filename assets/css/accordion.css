@@ -134,22 +134,22 @@ body .collapsible, body .collapsible.colored{
 ----------------------------------------*/
 [data-site_mode="dark"] .collapsible-header,
 [data-site_mode="dark"] .collapsible-header:focus{
-  background-color: #455A64;
+  background-color: #001f27;
   color: #f5f5f5;
-  border-color: #455A64;
+  border-color: #001f27;
 }
 [data-site_mode="dark"] .collapsible-body{
-  border-color: #455A64;
-  background-color: #455A64;
+  border-color: #001f27;
+  background-color: #001f27; /* 455A64 */
 }
 
 [data-site_mode="dark"] .collapsible.transparent .collapsible-body,
 [data-site_mode="dark"] .collapsible.transparent .active .collapsible-header,
 [data-site_mode="dark"] .collapsible.transparent .collapsible-header{
   background: transparent;
-  border: 1px solid #455A64;
+  border: 1px solid #001f27;
 }
 [data-site_mode="dark"] .collapsible.gray .collapsible-body,
 [data-site_mode="dark"] .collapsible.gray .collapsible-header{
-	background-color: #455A64;
+	background-color: #001f27;
 }

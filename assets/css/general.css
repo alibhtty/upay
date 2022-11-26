@@ -228,7 +228,7 @@ label {
 	margin-top: 50px;
 }
 
-.pagetitle::after {
+/* .pagetitle::after {
 	display: block;
 	position: relative;
 	content: " ";
@@ -236,8 +236,8 @@ label {
     width: 40px;
     margin: 8px 0 0px 20px;
 	background: var(--primary-color);
-}
-.pagetitle::before {
+} */
+/* .pagetitle::before {
 	display: block;
 	position: absolute;
 	content: " ";
@@ -245,9 +245,9 @@ label {
     width: 20px;
     margin: 7px 0 0px 0;
 	background: var(--primary-color);
-	/* top: 36px; */
+	top: 36px;
 	bottom: -1px;
-}
+} */
 
 .small {
 	font-size: 14px;
