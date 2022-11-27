@@ -6,7 +6,7 @@
 	"orientation": "portrait",
 	"lang": "en-US",
     "id": "/?homescreen=1",
-	"start_url": "/?homescreen=1",
+	"start_url": "https://alibhtty.github.io/upay/?homescreen=1",
 	"background_color": "#000000",
 	"theme_color": "#001f27",
 	"display": "standalone",
