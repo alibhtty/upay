@@ -5,9 +5,10 @@
 	"scope": "/",
 	"orientation": "portrait",
 	"lang": "en-US",
-	"start_url": "/",
-	"background_color": "#ffffff",
-	"theme_color": "#ff8a65",
+    "id": "/?homescreen=1",
+	"start_url": "/?homescreen=1",
+	"background_color": "#000000",
+	"theme_color": "#001f27",
 	"display": "standalone",
 	"icons": [
 		{

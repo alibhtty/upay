@@ -10,7 +10,7 @@ if ("serviceWorker" in navigator) {
     // Register the service worker
     navigator.serviceWorker
       .register("https://alibhtty.github.io/upay/assets/js/pwabuilder-sw.js", {
-        scope: "/"
+        scope: "https://alibhtty.github.io/upay/"
       })
       .then(function(reg) {
         console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);

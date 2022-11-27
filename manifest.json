@@ -5,9 +5,10 @@
 	"scope": "https://alibhtty.github.io/upay/",
 	"orientation": "portrait",
 	"lang": "en-US",
-	"start_url": "./",
+	"id": "/?homescreen=1",
+	"start_url": "/?homescreen=1",
 	"background_color": "#ffffff",
-	"theme_color": "#ff8a65",
+	"theme_color": "#001f27",
 	"display": "standalone",
 	"icons": [
 		{
