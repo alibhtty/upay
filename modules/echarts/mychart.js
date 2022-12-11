@@ -1,5 +1,5 @@
 const ctx = document.getElementById('myChart')
-const names = ['Carlos', 'Pedro', 'María', 'Juan', 'Ali']
+const names = ['Carlos', 'Pedro', 'Pau', 'Juan', 'Ali']
 const ages = [24, 12, 18, 29, 20]
 
 const myChart = new Chart(ctx, {
